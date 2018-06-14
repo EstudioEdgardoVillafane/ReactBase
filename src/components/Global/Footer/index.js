@@ -10,22 +10,27 @@ class Footer extends Component {
     super(props);
     this.clickFunc = this.clickFunc.bind(this);
   }
-  clickFunc(){
-    fetch("./php/list.php", {
-      method: "POST",
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'aplication/json',
-      },
-      body: JSON.stringify({
-        key: 'test'
-      })
-    })
-    .then((response) => response.json())
-    .then((res) => {
-      console.log(res);
-    });
-  }
+    handleClick(){
+      const url = "./php/something.php"; //Use the point when you are using a route of php.
+      const data = {
+          nombre: "toto",
+          apellido: "hourcade"
+      }; //Data as object.
+        fetch(url, {
+          method: "POST",
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'aplication/json',
+          },
+          body: data,   // You can use the function JSON.stringfy too.
+        }) //Here we are finishing the method post with some php 
+        .then((response) => response.json())    //And here we are calls the response like json of this php;
+        .then((res) => {
+          console.log(res);
+        });
+    }
+
+
 	static propTypes = {
     copyright: PropTypes.string
   };

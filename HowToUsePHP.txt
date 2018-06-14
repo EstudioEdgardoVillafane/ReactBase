@@ -1,0 +1,23 @@
+To use php we need to call a function of JS/ReactJS. The function name is Fetch();
+We will use it in any method within a Class of component. Like it:
+
+const url = "./php/something.php"; //Use the point when you are using a route of php.
+const data = {
+    nombre: "toto",
+    apellido: "hourcade"
+}; //Data as object.
+handleClick(){
+    fetch(this.url, {
+      method: "POST",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'aplication/json',
+      },
+      body: data,   // You can use the function JSON.stringfy too.
+    }); //Here we are finishing the method post with some php
+    .then((response) => response.json())    //And here we are calls the response like json of this php;
+    .then((res) => {
+      console.log(res);
+    });
+}
+  
