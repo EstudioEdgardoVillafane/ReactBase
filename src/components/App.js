@@ -10,6 +10,7 @@ import Footer from './Global/Footer/index'; //Global
 // Data
 
 class App extends Component {
+  
   static propTypes = {
     children: PropTypes.object.isRequired
   };
@@ -20,7 +21,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-          <AppRouter body={children} />     
+          <AppRouter body={children} />   
         <Footer />
       </div>
     );
