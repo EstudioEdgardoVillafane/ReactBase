@@ -7,7 +7,7 @@ import Header from './Global/Header/index'; //Global
 import AppRouter from './Approuter';        //Routes
 import Footer from './Global/Footer/index'; //Global
 
-// Data
+//Assets
 
 class App extends Component {
   

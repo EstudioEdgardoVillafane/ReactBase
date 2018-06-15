@@ -13,9 +13,15 @@ class Header extends Component {
   
     return (
       <div className="Header">
-        <div className="Logo">
-          <ul className="Menu">
-          </ul>
+        <div className="container">
+          <div className="row">
+            <div className="col-6">
+            Compania S.R.C
+            </div>
+            <div className="col-6">
+            toto toto tootx
+            </div>
+          </div>
         </div>
       </div>
     );
