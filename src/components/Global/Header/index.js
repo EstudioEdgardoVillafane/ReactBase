@@ -21,16 +21,16 @@ class Header extends Component {
                 Compania S.R.C
               </p>
             </div>
-            <div className="offset-4 col-4 ">
-              <a className="ml-auto">Home</a>
-              <a className="ml-4">About</a>
-              <a className="ml-4">Contact</a>
+            <div className="offset-4 col-4 d-flex flex-row-reverse ">
+              <a className="ml-4 na-link">Contact</a>
+              <a className="ml-4 na-link">About</a>
+              <a className="ml-4 na-link">Home</a>
             </div>
           </div>
         </div>
+      </div>
         <div className="src-fondo">
         </div>
-      </div>
       </div>
     );
   }

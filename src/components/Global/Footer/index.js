@@ -10,10 +10,11 @@ class Footer extends Component {
   render() {
 
     return (
-      <div className="Footer">
-        <p onClick={this.handleClick}> click me! </p>
-        <Link to="/home">Toto</Link>
+      
+      <div className="Footer mt-4">
+        <p className="mb-0 py-3"> Derechos reservados por CH </p>
       </div>
+     
     );
   }
 }

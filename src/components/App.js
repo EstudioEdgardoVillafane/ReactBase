@@ -8,7 +8,7 @@ import AppRouter from './Approuter';        //Routes
 import Footer from './Global/Footer/index'; //Global
 
 //Assets
-
+import './Global.css'
 class App extends Component {
   
   static propTypes = {
@@ -20,9 +20,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header />
-          <AppRouter body={children} />   
-        <Footer />
+        <AppRouter body={children} />   
       </div>
     );
   }
